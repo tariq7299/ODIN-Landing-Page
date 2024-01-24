@@ -1,0 +1,42 @@
+
+/* Nav bar */
+html ,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.section{
+    width: 100%;
+}
+
+.hero-section {
+    height: 100svh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    
+}
+
+nav ul li {
+list-style-type: none;}
+
+
