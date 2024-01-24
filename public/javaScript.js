@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleNavBarButton.addEventListener('click', function() {
       const mobileNavBar = document.querySelector('.mobile-nav');
-      mobileNavBar.style.display = 'block';
+      // mobileNavBar.style.display = 'block';
+      mobileNavBar.style.width = '60vw';
     });
 
     closeNavBarButton.addEventListener('click', function() {
       const mobileNavBar = document.querySelector('.mobile-nav');
-      mobileNavBar.style.display = 'none';
+      // mobileNavBar.style.display = 'none';
+      mobileNavBar.style.width = '0';
     });
 
 

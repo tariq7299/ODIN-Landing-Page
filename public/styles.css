@@ -1,3 +1,8 @@
+:root{
+    
+}
+
+
 
 /* Nav bar */
 html ,
@@ -10,10 +15,21 @@ body {
 }
 
 .parent-container {
-    padding: 6rem;
+    /* padding: 1rem 6rem; */
+    /* padding: 1rem clamp(3rem );  */
     max-width: 1300px;
     margin: auto;
+}
+@media screen and (min-width: 801px) {
+    .parent-container {
+        padding: 1rem 6rem;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .parent-container {
+        padding: 1rem 1rem;
+    }
 }
 
 
@@ -33,18 +49,22 @@ nav.navbar {
 }
 
 .mobile-nav {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 0;
     background-color: #111;
     height: 100svh;
     z-index: 9999;
+    transition: width 0.5s ease;
 }
-.mobile-navlinks a{
 
+.mobile-navlinks{
+    margin-top: 4rem;
+}
 
+.mobile-navlinks a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -52,19 +72,34 @@ nav.navbar {
     display: block;
 }
 
-.mobile-nav-toggle-button{
+.mobile-navlinks li {
+    display: block;
+    transition: 0.3s;
+}
+
+
+.mobile-nav-toggle-button {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
     padding: 1rem;
+    font-size: 32px;
+    cursor:pointer
 
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
     .mobile-nav-toggle-button {
         display: block;
       }
+}
+
+.mobile-nav-close-button{
+    position: absolute;
+    left: 1rem;
+    font-size: 32px;
+    color: #fff
 }
 
 
@@ -79,7 +114,7 @@ nav.navbar {
     padding: 1rem;
 
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
     .header-logo-mobile-view {
         display: block;
       }
@@ -131,3 +166,12 @@ list-style-type: none;
     height: auto;
 }
 
+.hero-stuff-wrapper h1 {
+    font-size: clamp(2rem, 1rem + 5vw, 3rem);
+}
+
+.hero-stuff-wrapper p {
+    font-size: clamp(0.5rem, 8vw, 1rem);
+    
+    /* font-size: 0.5rem; */
+}
