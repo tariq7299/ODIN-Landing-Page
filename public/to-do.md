@@ -1,5 +1,9 @@
 # CSS
--   maka the nav bar responsive   
+- maka the nav bar responsive   
+- fix background color for the hero section
+- Add font
+- 
+
 
 # HTML
 -   alt in imgs
