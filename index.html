@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="./public/javaScript.js"></script>
-
+    
     <title>Landing Page</title>
 </head>
 
 <body>
 
-    <div class="section hero-section">
+    <!-- THis will appear in mobile views only -->
+    <img class="header-logo-mobile-view" src="./public/headerLogo.jpeg">
+    <div class="mobile-nav-toggle-button">
+        <button><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <nav class="mobile-nav">
+        <button class="mobile-nav-close-button"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="mobile-navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lets GO BOYYES</a></li>
+            <li><a href="#">About</a></li>
+            
+        </ul>
+    </nav>
+    
 
-
-        <div class="mobile-nav-toggle-button">
-            <button>TOGGLE</button>
-        </div>
-
-        <div class="mobile-nav">
-            <button class="mobile-nav-close-button">CLOSE</button>
-            <ul class="mobile-navlinks">
+    
+    <div class="parent-container">
+        <nav class="navbar">
+            <img src="./public/headerLogo.jpeg">
+            <ul class="navlinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Lets GO BOYYES</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </div>
-        
-        <nav>
-                <img src="./public/headerLogo.jpeg">
-                <ul class="navlinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Lets GO BOYYES</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
         </nav>
 
-        <div class="hero-stuff-wrapper">
-            <div>
-                <h1>This Website is awesome</h1>
-                <p>I am a full stack engineer from Gaza, I hope for piece and prospetiy and alwyas remeber ALLAH IS THE GREATEST</p>
-                <button>Sign up</button>
+        <div class="section hero-section">
+    
+    
+    
+            <div class="hero-stuff-wrapper">
+                <div>
+                    <h1>This Website is awesome</h1>
+                    <p>I am a full stack engineer from Gaza, I hope for piece and prospetiy and alwyas remeber ALLAH IS THE GREATEST</p>
+                    <button>Sign up</button>
+                </div>
+    
+                <div>
+                    <img src="./public/heroImage.jpeg">
+                </div>
+    
             </div>
-
-            <div>
-                <img src="./public/heroImage.jpeg">
-            </div>
-
+    
         </div>
-
     </div>
 
 </body>

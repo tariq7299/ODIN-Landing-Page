@@ -3,22 +3,25 @@
 html ,
 body {
     margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
 
-body {
+.parent-container {
     padding: 6rem;
     max-width: 1300px;
     margin: auto;
+
 }
+
 
 .section{
     width: 100%;
 }
 
-nav {
+nav.navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -31,6 +34,22 @@ nav {
 
 .mobile-nav {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    background-color: #111;
+    height: 100svh;
+    z-index: 9999;
+}
+.mobile-navlinks a{
+
+
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
 }
 
 .mobile-nav-toggle-button{
@@ -49,14 +68,32 @@ nav {
 }
 
 
+.header-logo-mobile-view{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+    padding: 1rem;
 
-nav img {
+}
+@media screen and (max-width: 799px) {
+    .header-logo-mobile-view {
+        display: block;
+      }
+}
+
+
+
+nav.navbar  img {
     width: 80px;
     height: auto;
     margin-right: auto;
 }
 
-nav ul {
+nav.navbar ul {
     display: flex;
     gap: 10px;
     
@@ -73,7 +110,6 @@ list-style-type: none;
     gap: 20px;
     padding: 100px 0;
     width: 100%;
-    /* max-width: 1200px; */
     margin: auto;
     height: 100%;
     justify-content: space-between;
