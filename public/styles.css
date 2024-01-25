@@ -46,18 +46,6 @@ body {
     width: 100%;
 }
 
-
-nav.navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-
-    @media screen and (max-width: 800px) {
-        display: none;
-    }
-}
-
 .mobile-nav {
     /* display: none; */
     position: fixed;
@@ -135,6 +123,14 @@ nav.navbar {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: baseline;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    nav.navbar {
+
+        display: none;
+    }
 }
 
 nav.navbar  .header-logo {
@@ -145,13 +141,23 @@ nav.navbar  .header-logo {
 
 }
 
-nav.navbar ul {
+nav ul {
     display: flex;
-    gap: 10px;
+    gap: 2rem;
+    color: var(--secondary-text-color);
     
 }
 
-nav ul li {
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:visited{
+    color: var(--secondary-text-color);
+}
+
+nav.navbar ul li {
 list-style-type: none;
 }
 
