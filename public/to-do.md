@@ -7,6 +7,7 @@
 
 # HTML
 -   alt in imgs
+- Fix grammer and spelling of text in website
 
 # UI Design
 -   CROP the logo in nav bar
