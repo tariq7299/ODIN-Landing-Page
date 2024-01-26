@@ -74,6 +74,7 @@ body {
     height: 100svh;
     z-index: 9999;
     transition: width 0.5s ease;
+
 }
 
 .mobile-navlinks{
@@ -157,7 +158,7 @@ nav.navbar  .header-logo {
     color: var(--primary-text-color);
 }
 
-nav ul {
+nav.navbar ul {
     display: flex;
     gap: 2rem;
     color: var(--secondary-text-color);
