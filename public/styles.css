@@ -170,14 +170,35 @@ list-style-type: none;
 
 
 @media screen and (max-width: 1000px) {
-    /* .hero-stuff-wrapper {
-        justify-content: center;       
-    } */
+    .hero-stuff-wrapper {
+        padding: 0;
+        height: 100svh;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 }
 
 .hero-stuff-wrapper .hero-text-wrapper{
     flex-basis: 400px;
     flex-grow: 2;
+}
+
+.hero-text-wrapper button {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 5px 25px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-text-wrapper {
+        padding-bottom: 1rem;
+    }
 }
 
 .hero-stuff-wrapper .hero-image-wrapper{
