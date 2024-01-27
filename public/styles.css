@@ -273,7 +273,6 @@ list-style-type: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     width: 100%;
     height: 80%;
 }
@@ -284,8 +283,7 @@ list-style-type: none;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 100%;
+    flex: auto;
 }
 
 .illustrations-and-images .wrapper .blue-box {
@@ -296,8 +294,9 @@ list-style-type: none;
     min-height: 100px;
     max-width: 150px;
     max-height: 150px;
-    /* flex: 1 0 100px; */
-    flex-grow: 1;
+    flex: auto;
+    /* width: 50%; */
+    /* height: 50%; */
 }
 
 .illustrations-and-images .wrapper p {
