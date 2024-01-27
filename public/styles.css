@@ -282,17 +282,29 @@ list-style-type: none;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     width: 20%;
-    height: 50%;
+    height: 100%;
 }
 
 .illustrations-and-images .wrapper .blue-box {
+    box-sizing: border-box;
     border: 4px solid blue;
     border-radius: 10px;
-    flex: 1 1 100px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    /* flex: 1 0 100px; */
+    flex-grow: 1;
 }
 
 .illustrations-and-images .wrapper p {
     /* flex-grow: 1; */
+    /* min-width: 80px;
+    min-height: 80px;
+    max-height: 150px; */
+    max-width: 150px;
 }
 
