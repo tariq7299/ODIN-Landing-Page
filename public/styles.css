@@ -5,7 +5,7 @@
     --secondary-text-color: #e5e7eb;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 
 /* Nav bar */
@@ -250,7 +250,6 @@ list-style-type: none;
 
 }
 
-
 .illustration-section {
     display: flex;
     flex-direction: column;
@@ -258,13 +257,19 @@ list-style-type: none;
     height: 100%;
     width: 100%;
     justify-content: center;
-
-    /* background-color: var(--primary-color); */
 }
 
 .illustration-section .title {
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 1rem + 5vw, 3rem);
+    color: var(--primary-color);
 }
 
 .illustration-section .illustrations-and-images  {
@@ -276,8 +281,7 @@ list-style-type: none;
     align-items: center;
     width: 100%;
     max-width: 800px;
-    /* width: max(100%, 800px); */
-    height: 80%;
+    /* height: 80%; */
 }
 
 .illustrations-and-images .wrapper {
@@ -287,12 +291,7 @@ list-style-type: none;
     justify-content: center;
     align-items: center;
     flex: auto;
-    /* min-height: 200px; */
-    /* height: max(50%, 200px); */
-    /* height: 100%; */
-    /* max-height: 500px; */
-
-
+    min-height: 200px;
 }
 
 .illustrations-and-images .wrapper .blue-box {
@@ -309,7 +308,6 @@ list-style-type: none;
 
 .illustrations-and-images .wrapper p {
     max-width: 150px;
-    
-    
+    text-align: center;
 }
 
