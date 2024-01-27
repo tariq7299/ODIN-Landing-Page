@@ -21,7 +21,6 @@ body {
 
 .section1 {
     background-color: var(--primary-color);
-    /* margin: auto; */
 }
 
 
@@ -54,7 +53,7 @@ body {
     }
 }
 
-.section{
+.section {
     width: 100%;
     max-width: 1300px;
     margin: auto;
