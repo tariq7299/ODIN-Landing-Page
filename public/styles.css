@@ -24,12 +24,11 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
     .parent-container {
-        height: 100svh;
+        height: 100vh;
     }
 }
-
 .parent-container {
     margin: auto;
 }
@@ -73,6 +72,7 @@ body {
 }
 
 .mobile-navlinks{
+    position: absolute;
     margin-top: 4rem;
 }
 
@@ -82,6 +82,7 @@ body {
     font-size: 25px;
     color: #818181;
     display: block;
+
 }
 
 .mobile-navlinks li {
@@ -141,7 +142,6 @@ nav.navbar {
 
 @media screen and (max-width: 800px) {
     nav.navbar {
-
         display: none;
     }
 }
@@ -311,3 +311,37 @@ list-style-type: none;
     text-align: center;
 }
 
+.quote-section-color {
+    background-color: var(--secondary-text-color);
+}
+
+.quote-section {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-section .wrapper {
+    /* width: 100%; */
+    /* height: 100%; */
+
+}
+
+.quote-section .wrapper p:first-child {
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight:lighter;
+    color: var(--primary-color);
+
+}
+
+.quote-section .wrapper p:nth-child(2) {
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
